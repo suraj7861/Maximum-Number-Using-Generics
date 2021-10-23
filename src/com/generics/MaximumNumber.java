@@ -1,11 +1,10 @@
 package com.generics;
 
-public class MaximumNumber<T extends Comparable> {
+public class MaximumNumber<T extends Comparable<T>> {
 	//variable declaration
-	T x1, x2, x3, x4;
+	T x1, x2, x3, x4, max;
 	
 	public MaximumNumber(T x1, T x2, T x3, T x4) {
-		super();
 		this.x1 = x1;
 		this.x2 = x2;
 		this.x3 = x3;
@@ -13,7 +12,7 @@ public class MaximumNumber<T extends Comparable> {
 	}
 	//method: find maximum 
 	public void findMaximum()  {
-		T max = x1;
+		max = x1;
 		if(x2.compareTo(max) > 0) {
 			max = x2;
 		}
@@ -23,7 +22,12 @@ public class MaximumNumber<T extends Comparable> {
 		else if(x4.compareTo(max) > 0) {
 			max = x4;
 		}
-		System.out.println("Maximun is: "+max);
+		//System.out.println("Maximun is: "+max);
+		
 	}	
+	//print maximum 
+	public <T> void printMax(){
+		System.out.println(max);
+	}
 
 }

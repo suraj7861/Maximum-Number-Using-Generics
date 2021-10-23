@@ -5,19 +5,19 @@ public class Generics {
 	public static void main (String[] args) {
 		System.out.println("welcome to Generics proogram");
 		//object creation for Integer
-		MaximumNumber maxInt = new MaximumNumber();
+		MaximumNumber maxInt = new MaximumNumber(32,23,12);
 		//method call to find max Integer
-		maxInt.findMaximum(32,23,12);
+		maxInt.findMaximum();
 		
 		//object creation for Float
-		MaximumNumber maxfloat = new MaximumNumber();
+		MaximumNumber maxfloat = new MaximumNumber(32.5f,23.3f,12.6f);
 		//method call to find max float
-		maxfloat.findMaximum(32.5f,23.3f,12.6f);
+		maxfloat.findMaximum();
 		
 		//object creation for String
-		MaximumNumber maxString = new MaximumNumber();
+		MaximumNumber maxString = new MaximumNumber("Truck", "Ford", "Car");
 		//method call to find max String
-		maxString.findMaximum("Truck", "Ford", "Car");
+		maxString.findMaximum();
 
 	}
 }

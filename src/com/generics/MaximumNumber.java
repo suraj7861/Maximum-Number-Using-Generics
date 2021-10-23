@@ -1,6 +1,6 @@
 package com.generics;
 
-public class MaximumNumber<T extends Comparable> {
+public class MaximumNumber<T extends Comparable<T>> {
 	//variable declaration
 	T x1, x2, x3, x4;
 	

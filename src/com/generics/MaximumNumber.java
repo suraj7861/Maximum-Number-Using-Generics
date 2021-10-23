@@ -2,14 +2,14 @@ package com.generics;
 
 public class MaximumNumber {
 	
-	//method: find maximum integer
-	public <T extends Comparable> void findMaximum(T num1, T num2, T num3)  {
-		T max = num1;
-		if(num2.compareTo(max) > 0) {
-			max = num2;
+	//method: find maximum 
+	public <T extends Comparable<T>> void findMaximum(T x, T y, T z)  {
+		T max = x;
+		if(y.compareTo(max) > 0) {
+			max = y;
 		}
-		else if(num3.compareTo(max) > 0) {
-			max = num3;
+		else if(z.compareTo(max) > 0) {
+			max = z;
 		}
 		System.out.println("Maximun is: "+max);
 	}	

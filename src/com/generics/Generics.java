@@ -3,7 +3,7 @@ package com.generics;
 public class Generics {
 	
 	public static void main (String[] args) {
-		System.out.println("welcome to Generics proogram");
+		System.out.println("welcome to Generics program");
 		//object creation for Integer
 		MaximumNumber maxInt = new MaximumNumber();
 		//method call to find max Integer
